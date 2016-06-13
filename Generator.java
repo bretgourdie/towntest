@@ -7,7 +7,7 @@ public abstract class Generator {
 		random = new Random(seed);
 	}
 	
-	protected nextInt(int upperBound){
+	protected int nextInt(int upperBound){
 		return random.nextInt(upperBound);
 	}
 }

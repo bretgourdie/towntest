@@ -1,3 +1,5 @@
+import java.util.LinkedList;
+
 public class VisitorListGenerator extends Generator {
 	
 	private int iStudent = 0;
@@ -17,19 +19,10 @@ public class VisitorListGenerator extends Generator {
 		for(int ii = 0; ii < numberOfVisitors; ii++){
 			int nextVisitor = this.nextInt(numberOfVisitorTypes);
 			
-			switch (nextVisitor){
-				case iStudent: visitorList.add(new Student());
-				break;
-				
-				case iProfessor: visitorList.add(new Professor());
-				break;
-				
-				case iBusinessPerson: visitorList.add(new BusinessPerson());
-				break;
-				
-				case iBlogger: visitorList.add(new Blogger());
-				break;
-			}
+			if     (nextVisitor == iStudent) { visitorList.add(new Student()); }
+			else if(nextVisitor == iProfessor) { visitorList.add(new Professor()); }
+			else if(nextVisitor == iBusinessPerson) { visitorList.add(new BusinessPerson()); }
+			else if(nextVisitor == iBlogger) { visitorList.add(new Blogger()); }
 			
 			return visitorList;
 		}

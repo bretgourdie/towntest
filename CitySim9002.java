@@ -1,7 +1,5 @@
-import java.util.LinkedList;
-
 public class CitySim9002 {
-	public static void Main(string[] args){
+	public static void Main(String[] args){
 		if(args.length != 1){
 			System.out.println("Expecting 1 integer argument; \""
 			+ Integer.toString(args.length) + "\" arguments specified");
@@ -85,7 +83,7 @@ public class CitySim9002 {
 					+ stLocation
 					+ ".");
 				}
-			} (while curLocation != null);
+			} while (curLocation != null);
 		}
 	}
 }

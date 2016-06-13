@@ -1,3 +1,4 @@
+
 public class Student extends Visitor {
 	public Student() { super(); }
 	
@@ -5,7 +6,7 @@ public class Student extends Visitor {
 		return location != Location.CathedralOfLearning;
 	}
 	
-	public string toString(){
+	public String toString(){
 		return new String("Student");
 	}
 }
