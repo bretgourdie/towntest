@@ -1,6 +1,6 @@
 public enum Location {
 	CathedralOfLearning, 
-    SquirrelHill, 
-    ThePoint, 
-    Downtown
+	SquirrelHill, 
+	ThePoint, 
+	Downtown
 }

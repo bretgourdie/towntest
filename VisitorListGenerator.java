@@ -19,13 +19,13 @@ public class VisitorListGenerator extends Generator {
 		for(int ii = 0; ii < numberOfVisitors; ii++){
 			int nextVisitor = this.nextInt(numberOfVisitorTypes);
 			
-			if     (nextVisitor == iStudent) { visitorList.add(new Student()); }
+			if	 (nextVisitor == iStudent) { visitorList.add(new Student()); }
 			else if(nextVisitor == iProfessor) { visitorList.add(new Professor()); }
 			else if(nextVisitor == iBusinessPerson) { visitorList.add(new BusinessPerson()); }
 			else if(nextVisitor == iBlogger) { visitorList.add(new Blogger()); }
 			
 		}
 		
-        return visitorList;
+		return visitorList;
 	}
 }

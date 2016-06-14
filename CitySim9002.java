@@ -17,8 +17,8 @@ public class CitySim9002 {
 		} catch (NumberFormatException ex) {
 			System.out.println("Expecting 1 integer argument; argument \""
 			+ args[0] + "\" specified.");
-            
-            return;
+			
+			return;
 		}
 		
 		System.out.println("Welcome to CitySim!  Your seed is " + Integer.toString(seed) + ".");
@@ -91,15 +91,15 @@ public class CitySim9002 {
 			} while (curLocation != null);
 		}
 	}
-    
-    public static String getLocationString(Location location){
-        switch (location){
-            case CathedralOfLearning: return "The Cathedral of Learning";
-            case SquirrelHill:        return "Squirrel Hill";
-            case ThePoint:            return "The Point";
-            case Downtown:            return "Downtown";
-        }
-        
-        return "";
-    }
+	
+	public static String getLocationString(Location location){
+		switch (location){
+			case CathedralOfLearning: return "The Cathedral of Learning";
+			case SquirrelHill:		return "Squirrel Hill";
+			case ThePoint:			return "The Point";
+			case Downtown:			return "Downtown";
+		}
+		
+		return "";
+	}
 }
