@@ -21,7 +21,7 @@ public class CitySim9002 {
             return;
 		}
 		
-		System.out.println("Welcome to CitySim!  Your seed is " + Integer.toString(seed));
+		System.out.println("Welcome to CitySim!  Your seed is " + Integer.toString(seed) + ".");
 		
 		VisitorListGenerator visgen = new VisitorListGenerator(seed);
 		
