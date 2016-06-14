@@ -1,5 +1,8 @@
+import java.util.LinkedList;
+import java.util.ListIterator;
+
 public class CitySim9002 {
-	public static void Main(String[] args){
+	public static void main(String[] args){
 		if(args.length != 1){
 			System.out.println("Expecting 1 integer argument; \""
 			+ Integer.toString(args.length) + "\" arguments specified");
@@ -14,6 +17,8 @@ public class CitySim9002 {
 		} catch (NumberFormatException ex) {
 			System.out.println("Expecting 1 integer argument; argument \""
 			+ args[0] + "\" specified.");
+            
+            return;
 		}
 		
 		System.out.println("Welcome to CitySim!  Your seed is " + Integer.toString(seed));
@@ -68,7 +73,7 @@ public class CitySim9002 {
 					+ stLocation
 					+ "!");
 					
-					boolean liked = visitor.prefersLocation(location);
+					boolean liked = visitor.prefersLocation(curLocation);
 					
 					String notLiked = "";
 					if(!liked){
@@ -86,4 +91,15 @@ public class CitySim9002 {
 			} while (curLocation != null);
 		}
 	}
+    
+    public static String getLocationString(Location location){
+        switch (location){
+            case CathedralOfLearning: return "The Cathedral of Learning";
+            case SquirrelHill:        return "Squirrel Hill";
+            case ThePoint:            return "The Point";
+            case Downtown:            return "Downtown";
+        }
+        
+        return "";
+    }
 }

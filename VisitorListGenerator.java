@@ -24,7 +24,8 @@ public class VisitorListGenerator extends Generator {
 			else if(nextVisitor == iBusinessPerson) { visitorList.add(new BusinessPerson()); }
 			else if(nextVisitor == iBlogger) { visitorList.add(new Blogger()); }
 			
-			return visitorList;
 		}
+		
+        return visitorList;
 	}
 }
